@@ -16,6 +16,16 @@
 		D248E7111AE93CDF005E9E53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D248E70F1AE93CDF005E9E53 /* LaunchScreen.xib */; };
 		D248E71D1AE93CDF005E9E53 /* intelligentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D248E71C1AE93CDF005E9E53 /* intelligentTests.m */; };
 		D248E7281AE944C2005E9E53 /* MenuButtion.m in Sources */ = {isa = PBXBuildFile; fileRef = D248E7271AE944C2005E9E53 /* MenuButtion.m */; };
+		D27808691BFAD664002772DB /* qysdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808681BFAD664002772DB /* qysdk.framework */; };
+		D278086D1BFAD94C002772DB /* VideoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D278086C1BFAD94C002772DB /* VideoMainViewController.m */; };
+		D278086F1BFB039E002772DB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D278086E1BFB039E002772DB /* AVFoundation.framework */; };
+		D27808711BFB03BA002772DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808701BFB03BA002772DB /* AudioToolbox.framework */; };
+		D27808731BFB03CA002772DB /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808721BFB03CA002772DB /* OpenAL.framework */; };
+		D27808751BFB03DB002772DB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808741BFB03DB002772DB /* libz.tbd */; };
+		D27808771BFB03F1002772DB /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808761BFB03F1002772DB /* libiconv.tbd */; };
+		D278087C1BFB04D1002772DB /* MindNet.m in Sources */ = {isa = PBXBuildFile; fileRef = D278087B1BFB04D1002772DB /* MindNet.m */; };
+		D27808801BFB0532002772DB /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D278087F1BFB0532002772DB /* DeviceModel.m */; };
+		D27808831BFB167F002772DB /* CameraTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D27808821BFB167F002772DB /* CameraTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +55,20 @@
 		D248E71C1AE93CDF005E9E53 /* intelligentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = intelligentTests.m; sourceTree = "<group>"; };
 		D248E7261AE944C2005E9E53 /* MenuButtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButtion.h; sourceTree = "<group>"; };
 		D248E7271AE944C2005E9E53 /* MenuButtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButtion.m; sourceTree = "<group>"; };
+		D27808681BFAD664002772DB /* qysdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = qysdk.framework; sourceTree = "<group>"; };
+		D278086B1BFAD94C002772DB /* VideoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMainViewController.h; sourceTree = "<group>"; };
+		D278086C1BFAD94C002772DB /* VideoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMainViewController.m; sourceTree = "<group>"; };
+		D278086E1BFB039E002772DB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D27808701BFB03BA002772DB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D27808721BFB03CA002772DB /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		D27808741BFB03DB002772DB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D27808761BFB03F1002772DB /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		D278087A1BFB04D1002772DB /* MindNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MindNet.h; sourceTree = "<group>"; };
+		D278087B1BFB04D1002772DB /* MindNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MindNet.m; sourceTree = "<group>"; };
+		D278087E1BFB0532002772DB /* DeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModel.h; sourceTree = "<group>"; };
+		D278087F1BFB0532002772DB /* DeviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceModel.m; sourceTree = "<group>"; };
+		D27808811BFB167F002772DB /* CameraTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraTableViewCell.h; sourceTree = "<group>"; };
+		D27808821BFB167F002772DB /* CameraTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +76,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27808771BFB03F1002772DB /* libiconv.tbd in Frameworks */,
+				D27808751BFB03DB002772DB /* libz.tbd in Frameworks */,
+				D27808731BFB03CA002772DB /* OpenAL.framework in Frameworks */,
+				D27808711BFB03BA002772DB /* AudioToolbox.framework in Frameworks */,
+				D278086F1BFB039E002772DB /* AVFoundation.framework in Frameworks */,
+				D27808691BFAD664002772DB /* qysdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +98,8 @@
 		D248E6F11AE93CDF005E9E53 = {
 			isa = PBXGroup;
 			children = (
+				D27808781BFB049A002772DB /* framework */,
+				D27808671BFAD664002772DB /* library */,
 				D248E6FC1AE93CDF005E9E53 /* intelligent */,
 				D248E7191AE93CDF005E9E53 /* intelligentTests */,
 				D248E6FB1AE93CDF005E9E53 /* Products */,
@@ -86,6 +118,9 @@
 		D248E6FC1AE93CDF005E9E53 /* intelligent */ = {
 			isa = PBXGroup;
 			children = (
+				D278087D1BFB0532002772DB /* model */,
+				D27808791BFB04D1002772DB /* mindnet */,
+				D278086A1BFAD902002772DB /* video */,
 				D248E7011AE93CDF005E9E53 /* AppDelegate.h */,
 				D248E7021AE93CDF005E9E53 /* AppDelegate.m */,
 				D248E7071AE93CDF005E9E53 /* ViewController.h */,
@@ -125,6 +160,55 @@
 				D248E71B1AE93CDF005E9E53 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D27808671BFAD664002772DB /* library */ = {
+			isa = PBXGroup;
+			children = (
+				D27808681BFAD664002772DB /* qysdk.framework */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		D278086A1BFAD902002772DB /* video */ = {
+			isa = PBXGroup;
+			children = (
+				D278086B1BFAD94C002772DB /* VideoMainViewController.h */,
+				D278086C1BFAD94C002772DB /* VideoMainViewController.m */,
+				D27808811BFB167F002772DB /* CameraTableViewCell.h */,
+				D27808821BFB167F002772DB /* CameraTableViewCell.m */,
+			);
+			name = video;
+			sourceTree = "<group>";
+		};
+		D27808781BFB049A002772DB /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				D27808761BFB03F1002772DB /* libiconv.tbd */,
+				D27808741BFB03DB002772DB /* libz.tbd */,
+				D27808721BFB03CA002772DB /* OpenAL.framework */,
+				D27808701BFB03BA002772DB /* AudioToolbox.framework */,
+				D278086E1BFB039E002772DB /* AVFoundation.framework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		D27808791BFB04D1002772DB /* mindnet */ = {
+			isa = PBXGroup;
+			children = (
+				D278087A1BFB04D1002772DB /* MindNet.h */,
+				D278087B1BFB04D1002772DB /* MindNet.m */,
+			);
+			path = mindnet;
+			sourceTree = "<group>";
+		};
+		D278087D1BFB0532002772DB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D278087E1BFB0532002772DB /* DeviceModel.h */,
+				D278087F1BFB0532002772DB /* DeviceModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +313,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D248E7281AE944C2005E9E53 /* MenuButtion.m in Sources */,
+				D27808801BFB0532002772DB /* DeviceModel.m in Sources */,
+				D278086D1BFAD94C002772DB /* VideoMainViewController.m in Sources */,
 				D248E7061AE93CDF005E9E53 /* intelligent.xcdatamodeld in Sources */,
+				D27808831BFB167F002772DB /* CameraTableViewCell.m in Sources */,
 				D248E7031AE93CDF005E9E53 /* AppDelegate.m in Sources */,
+				D278087C1BFB04D1002772DB /* MindNet.m in Sources */,
 				D248E7091AE93CDF005E9E53 /* ViewController.m in Sources */,
 				D248E7001AE93CDF005E9E53 /* main.m in Sources */,
 			);
@@ -362,6 +450,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/library",
+				);
 				INFOPLIST_FILE = intelligent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -376,6 +468,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/library",
+				);
 				INFOPLIST_FILE = intelligent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

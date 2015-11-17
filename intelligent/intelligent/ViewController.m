@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "VideoMainViewController.h"
 
 @interface ViewController ()
 
@@ -66,23 +67,31 @@
 }
 
 - (IBAction)menu1Click:(id)sender {
-    self.waitLabel.text=@"正在加载数据..";
-    [self.waitIndicator startAnimating];
-    [UIView animateWithDuration:0.3 animations:^{
-        self.viewWaitContainer.alpha=0.9;
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:2 animations:^{
-            self.viewWaitContainer.alpha=1.0;
+    if ([sender isEqual:self.menu1_11])
+    {
+        VideoMainViewController *controller =  [self.storyboard instantiateViewControllerWithIdentifier:@"VideoMainViewController"];
+        [self presentViewController:controller animated:YES completion:nil];
+        
+    }else
+    {
+        self.waitLabel.text=@"正在加载数据..";
+        [self.waitIndicator startAnimating];
+        [UIView animateWithDuration:0.3 animations:^{
+            self.viewWaitContainer.alpha=0.9;
         } completion:^(BOOL finished) {
-            self.waitLabel.text=@"数据加载失败，请稍后再试!";
-            [self.waitIndicator stopAnimating];
-            [UIView animateWithDuration:2.4 animations:^{
-                self.viewWaitContainer.alpha=0.9;
+            [UIView animateWithDuration:2 animations:^{
+                self.viewWaitContainer.alpha=1.0;
             } completion:^(BOOL finished) {
-                self.viewWaitContainer.alpha=0.0;
+                self.waitLabel.text=@"数据加载失败，请稍后再试!";
+                [self.waitIndicator stopAnimating];
+                [UIView animateWithDuration:2.4 animations:^{
+                    self.viewWaitContainer.alpha=0.9;
+                } completion:^(BOOL finished) {
+                    self.viewWaitContainer.alpha=0.0;
+                }];
             }];
         }];
-    }];
+    }
 }
 
 - (IBAction)btnSheQuClick:(id)sender {
@@ -107,7 +116,7 @@
     } completion:^(BOOL finished) {
         self.viewMenuContainer.alpha=0.0;
     }];
-
+    
 }
 
 - (IBAction)btnJiaTingClick:(id)sender {
