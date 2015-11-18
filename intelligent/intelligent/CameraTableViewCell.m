@@ -30,15 +30,18 @@
 -(void)setDevice:(DeviceModel *)Device{
     _device=Device;
     self.lbName.text = [NSString stringWithFormat:@"%lld",_device.device_id];
-    if (!_device.status) {
+    //if (!_device.status) {
+    if (rand()%10 > 5) {
         self.lbStatus.text=@"在线";
         self.lbStatus.textColor=[UIColor whiteColor];
         self.lbName.textColor=[UIColor whiteColor];
+        self.imgCamera.image = [UIImage imageNamed:@"camera_online"];
     }else
     {
         self.lbStatus.text=@"离线";
         self.lbStatus.textColor=[UIColor grayColor];
         self.lbName.textColor=[UIColor grayColor];
+        self.imgCamera.image = [UIImage imageNamed:@"camera_offline"];
     }
 }
 
