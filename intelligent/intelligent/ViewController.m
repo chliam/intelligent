@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "VideoMainViewController.h"
+#import "LightViewController.h"
 
 @interface ViewController ()
 
@@ -72,7 +73,14 @@
         VideoMainViewController *controller =  [self.storyboard instantiateViewControllerWithIdentifier:@"VideoMainViewController"];
         [self presentViewController:controller animated:YES completion:nil];
         
-    }else
+    }
+    else if ([sender isEqual:self.menu1_2])
+    {
+        LightViewController *controller =  [self.storyboard instantiateViewControllerWithIdentifier:@"LightViewController"];
+        [self presentViewController:controller animated:YES completion:nil];
+        
+    }
+    else
     {
         self.waitLabel.text=@"正在加载数据..";
         [self.waitIndicator startAnimating];

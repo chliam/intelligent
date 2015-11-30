@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="Showroom - 副本.svg"
+   inkscape:version="0.91 r13725"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 2260.6546 804.91808"
+   height="227.16577mm"
+   width="638.00696mm">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient7722"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7724" />
+    </linearGradient>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6115">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6117" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6119" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6121" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6123" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6125" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6127">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6129" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6131" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6133" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6135" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6137" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6139">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6141" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6143" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6145" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6147" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6149" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6151">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6153" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6155" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6157" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6159" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6161" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6163">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6165" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6167" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6169" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6171" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6173" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6175">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6177" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6179" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6181" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6183" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6185" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6187">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6189" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6191" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6193" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6195" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6197" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6199">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6201" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6203" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6205" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6207" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6209" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6211">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6213" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6215" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6217" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6219" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6221" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6223">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6225" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6227" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6229" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6231" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6233" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6235">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6237" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6239" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6241" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6243" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6245" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6247">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6249" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6251" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6253" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6255" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6257" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6259">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6261" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6263" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6265" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6267" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6269" />
+    </filter>
+    <filter
+       x="-0.15"
+       width="1.3"
+       y="-0.15"
+       height="1.3"
+       inkscape:menu-tooltip="Felt like texture with color turbulence and slightly darker at the edges"
+       inkscape:menu="Textures"
+       inkscape:label="Felt"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6435">
+      <feGaussianBlur
+         result="result1"
+         in="SourceGraphic"
+         stdDeviation="2"
+         id="feGaussianBlur6437" />
+      <feTurbulence
+         result="result0"
+         numOctaves="5"
+         baseFrequency="0.05"
+         type="fractalNoise"
+         id="feTurbulence6439" />
+      <feDisplacementMap
+         result="result2"
+         scale="20"
+         yChannelSelector="G"
+         xChannelSelector="R"
+         in="result1"
+         in2="result0"
+         id="feDisplacementMap6441" />
+      <feGaussianBlur
+         result="result4"
+         in="result2"
+         stdDeviation="5"
+         id="feGaussianBlur6443" />
+      <feComposite
+         result="result6"
+         k1="1"
+         k3="1"
+         k2="0.5"
+         in="result0"
+         in2="result4"
+         operator="arithmetic"
+         id="feComposite6445" />
+      <feComposite
+         in="result6"
+         in2="result0"
+         operator="in"
+         result="result91"
+         id="feComposite6447" />
+      <feComposite
+         operator="arithmetic"
+         k1="1.5"
+         in="result2"
+         in2="result91"
+         id="feComposite6449" />
+    </filter>
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB"
+       id="filter6223-7">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur6225-4" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite6227-7" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite6229-5" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix6231-7" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend6233-3" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:current-layer="layer2"
+     inkscape:document-units="px"
+     inkscape:cy="343.40974"
+     inkscape:cx="942.39495"
+     inkscape:zoom="0.61"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="背景"
+     transform="translate(655.73767,-227.77203)"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#e6e6e6;filter:url(#filter6435)"
+       id="rect3443"
+       width="2260.6545"
+       height="804.91809"
+       x="-655.73767"
+       y="227.77203"
+       ry="0.66666698" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="房间"
+     style="display:inline;opacity:1"
+     transform="translate(655.73767,-227.77203)">
+    <ellipse
+       style="fill:#faffbd;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6223)"
+       id="xt"
+       ry="116.99999"
+       rx="81.666672"
+       cy="612.02887"
+       cx="297.66666" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6247)"
+       d="M 89.333333,505.02887 208,527.69554 l 1.33333,172 -100,28 -262.66666,-6 L -202,738.3622 l -198.66667,-20.66666 -26,-110.66667 0,-6.66667 377.333337,0.66667 -15.333334,-92 34.666667,-12 z"
+       id="ggaq"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6235)"
+       d="M -616.66667,599.69554 -452,598.3622 l 44.66667,167.33334 138.66666,-14 158.66667,22 82.666667,-30 L 130,765.02887 l 0,200 -244.66667,-26 -6.66666,10 -269.33334,-0.66667 -32.66666,-30.66666 -112,-71.33334 -99.33334,-153.33333 z"
+       id="zhjt"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6187)"
+       d="M 444,989.69554 509.33333,1011.6955 674,970.3622 l 45.33333,-68 21.33334,-104.66666 -18,-60 -101.33334,32 L 436,678.3622 l -40.66667,73.33334 48.66667,42 z"
+       id="zhjj"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6199)"
+       d="M 523.33333,702.3622 390,643.02887 l -1.33333,-138 77.33333,1.33333 0,-262.66666 94,0.66666 -2,266.66667 186,0.66667 128.66667,58.66666 0,76.66667 -132,56 z"
+       id="qyxxq"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6163)"
+       d="m 888,643.69554 143.3333,9.33333 173.3334,-208.66667 129.3333,26 19.3333,-45.33333 6,-114 -23.3333,-30 -170.6667,26.66667 -54.6666,-34.66667 -92,13.33333 -60.00003,173.33334 12,59.33333 -84,44.66667 z"
+       id="zhcs"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6151)"
+       d="m 1364,427.02887 21.3333,-111.33333 158,-38 34,127.33333 -20.6666,98.66667 -87.3334,-20.66667 -98,-12 z"
+       id="zhzw"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6127)"
+       d="m 1572.6667,542.3622 -12,78.66667 -94,41.33333 -34.6667,-32 -18,-78.66666 55.3333,-47.33334 z"
+       id="hd6"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6139)"
+       d="m 1391.3333,675.69554 -166.6666,-2.66667 -79.3334,-96.66667 94,-97.33333 132,40.66667 19.3334,38 26.6666,76 z"
+       id="wlw"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6115)"
+       d="m 1192,757.02887 94,-64.66667 111.3333,1.33334 46,128.66666 -161.3333,56 -104,-42 z"
+       id="zhsq"
+       inkscape:connector-curvature="0"
+       inkscape:label="#zhsq" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6175)"
+       d="M 903.33333,971.02887 836,1009.6955 l -98,-17.3333 -0.66667,-86.66666 51.33334,-202.66667 124,-42 134.66663,14.66667 78,-67.33334 63.3334,75.33334 L 1146,835.02887 1088.6667,878.3622 934,855.69554 Z"
+       id="zhdc"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#f8febd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6259)"
+       d="m -28,271.69554 390,1.33333 -6,203.33333 -25.33333,6 -0.66667,9.33334 -64,-0.66667 0,-9.33333 L 188.66667,478.3622 110,439.02887 l -27.333333,44.66667 -107.333334,-8.66667 -38,-18 z"
+       id="hjbf"
+       inkscape:connector-curvature="0" />
+    <ellipse
+       style="display:inline;opacity:1;fill:#faffbd;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6223-7)"
+       id="xt-0"
+       ry="116.99999"
+       rx="81.666672"
+       cy="875.31305"
+       cx="278.68854"
+       transform="matrix(1.7439824,0,0,1.2038875,-197.5033,-182.56378)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="门"
+     transform="translate(655.73767,-227.77203)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -23.788546,477.03181 105.286343,7.92951 6.60793,18.94273 -118.942731,-7.92951 z"
+       id="path3410"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 266.51982,491.56925 62.55507,1.32159 -0.44053,11.01321 -63.43612,-0.88105 z"
+       id="path3412"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 377.09251,582.75868 11.45375,0 0.88105,48.01762 -11.01321,0 z"
+       id="path3414"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 263.87665,720.64414 60.79295,2.64317 0.44053,9.25111 -61.67401,-3.52423 z"
+       id="path3416"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 129.51542,840.90846 16.74009,0 -1.32159,60.79295 -15.4185,-0.44053 z"
+       id="path3418"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -447.57709,613.15516 21.14537,-2.64318 25.55066,107.48899 -16.29956,10.57269 z"
+       id="path3420"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 428.46154,840.43913 15.76923,0 0,61.92307 -15.38462,-0.38461 z"
+       id="path3422"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 740.76923,798.51605 23.46154,0.38462 L 737.69231,904.28528 720,900.43913 Z"
+       id="path3424"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 872.40143,583.90342 13.9785,0 0.71684,47.31183 -15.05376,-0.35842 z"
+       id="path3426"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1171.6846,744.4769 20.0717,13.97849 -14.3369,78.13621 -30.1076,-3.22581 z"
+       id="path3428"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1390.3226,676.73496 6.4516,16.48746 -109.6774,-2.15054 -2.509,-17.2043 z"
+       id="path3430"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1391.0394,557.73855 22.2222,-6.45161 18.2796,78.49462 -13.9785,3.22581 z"
+       id="path3432"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1469.1756,483.545 86.7384,20.78853 17.5627,37.27599 -104.6595,-37.99283 z"
+       id="path3434"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000be0;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1359.4982,311.86041 26.1649,5.01792 -21.5054,109.319 -10.7527,-0.35842 z"
+       id="path3436"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="名称"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48.81374741px;line-height:125%;font-family:SimHei;-inkscape-font-specification:'SimHei, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="463.31467"
+       y="446.61215"
+       id="text3670"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="463.31467"
+         y="446.61215"
+         id="tspan3672"><tspan
+           x="463.31467"
+           y="446.61215"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48.81374741px;line-height:125%;font-family:SimHei;-inkscape-font-specification:'SimHei, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000"
+           id="txt_ggaq">公共安全</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:49.02127838px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="315.07745"
+       y="642.87079"
+       id="text3688"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="315.07745"
+         y="642.87079"
+         id="tspan3690"><tspan
+           x="315.07745"
+           y="642.87079"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_zhjt">智慧交通</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:49.02127838px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="719.65869"
+       y="164.23039"
+       id="text3676"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="719.65869"
+         y="164.23039"
+         id="tspan3678"><tspan
+           x="719.65869"
+           y="164.23039"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_hjbf">海警边防</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:49.23077011px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="905.25037"
+       y="406.11157"
+       id="text3682"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="905.25037"
+         y="406.11157"
+         id="tspan3684"><tspan
+           x="905.25037"
+           y="406.11157"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_xt">续厅</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:49.65517426px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="891.75873"
+       y="665.8078"
+       id="text3694"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="891.75873"
+         y="665.8078"
+         id="tspan3696"><tspan
+           x="891.75873"
+           y="665.8078"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_hdyuan">互动</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:48.60759354px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1147.3053"
+       y="398.83334"
+       id="text3706"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="1147.3053"
+         y="398.83334"
+         id="tspan3708"><tspan
+           x="1147.3053"
+           y="398.83334"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_qyxxq">企业形象区</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:48.81356049px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1139.6807"
+       y="651.4953"
+       id="text3700"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="1139.6807"
+         y="651.4953"
+         id="tspan3702"><tspan
+           x="1139.6807"
+           y="651.4953"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_zhjj">智慧家居</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:48.60759354px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1515.5825"
+       y="576.03552"
+       id="text3718"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="1515.5825"
+         y="576.03552"
+         id="tspan3720"><tspan
+           x="1515.5825"
+           y="576.03552"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_zhdc">智慧地产</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:48.60759354px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1691.2318"
+       y="182.47311"
+       id="text3712"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="1691.2318"
+         y="182.47311"
+         id="tspan3714"><tspan
+           x="1691.2318"
+           y="182.47311"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_zhcs">智慧城市</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:49.23077011px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1871.1173"
+       y="382.31522"
+       id="text3724"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="1871.1173"
+         y="382.31522"
+         id="tspan3726"><tspan
+           x="1871.1173"
+           y="382.31522"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_wlw">物联网</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:48.60759354px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1866.5183"
+       y="578.75684"
+       id="text3742"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="1866.5183"
+         y="578.75684"
+         id="tspan3744"><tspan
+           x="1866.5183"
+           y="578.75684"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_zhsq">智慧社区</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:49.65517426px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2088.9592"
+       y="370.48624"
+       id="text3736"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="2088.9592"
+         y="370.48624"
+         id="tspan3738"><tspan
+           x="2088.9592"
+           y="370.48624"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_hd6">互动</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:48.60759354px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2030.4564"
+       y="182.4731"
+       id="text3730"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="2030.4564"
+         y="182.4731"
+         id="tspan3732"><tspan
+           x="2030.4564"
+           y="182.4731"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:SimHei;-inkscape-font-specification:SimHei;fill:#000000"
+           id="txt_zhzw">智慧政务</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer99"
+     inkscape:label="房间复制"
+     style="display:inline;opacity:0"
+     transform="translate(655.73767,-227.77203)"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="fill:#faffbd"
+       id="btn_xt"
+       ry="116.99999"
+       rx="81.666672"
+       cy="612.02887"
+       cx="297.66666"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 89.333333,505.02887 208,527.69554 l 1.33333,172 -100,28 -262.66666,-6 L -202,738.3622 l -198.66667,-20.66666 -26,-110.66667 0,-6.66667 377.333337,0.66667 -15.333334,-92 34.666667,-12 z"
+       id="btn_ggaq"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -616.66667,599.69554 -452,598.3622 l 44.66667,167.33334 138.66666,-14 158.66667,22 82.666667,-30 L 130,765.02887 l 0,200 -244.66667,-26 -6.66666,10 -269.33334,-0.66667 -32.66666,-30.66666 -112,-71.33334 -99.33334,-153.33333 z"
+       id="btn_zhjt"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd"
+       id="btn_hdyuan"
+       sodipodi:type="arc"
+       sodipodi:cx="288"
+       sodipodi:cy="873.36218"
+       sodipodi:rx="143.99998"
+       sodipodi:ry="146.33334"
+       sodipodi:start="0"
+       sodipodi:end="6.2763681"
+       d="M 431.99998,873.36218 A 143.99998,146.33334 0 0 1 288.24542,1019.6953 143.99998,146.33334 0 0 1 144.00085,873.86097 143.99998,146.33334 0 0 1 287.26374,727.03075 143.99998,146.33334 0 0 1 431.99664,872.36461"
+       sodipodi:open="true"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 444,989.69554 509.33333,1011.6955 674,970.3622 l 45.33333,-68 21.33334,-104.66666 -18,-60 -101.33334,32 L 436,678.3622 l -40.66667,73.33334 48.66667,42 z"
+       id="btn_zhjj"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 523.33333,702.3622 390,643.02887 l -1.33333,-138 77.33333,1.33333 0,-262.66666 94,0.66666 -2,266.66667 186,0.66667 128.66667,58.66666 0,76.66667 -132,56 z"
+       id="btn_qyxxq"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 888,643.69554 143.3333,9.33333 173.3334,-208.66667 129.3333,26 19.3333,-45.33333 6,-114 -23.3333,-30 -170.6667,26.66667 -54.6666,-34.66667 -92,13.33333 -60.00003,173.33334 12,59.33333 -84,44.66667 z"
+       id="btn_zhcs"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1364,427.02887 21.3333,-111.33333 158,-38 34,127.33333 -20.6666,98.66667 -87.3334,-20.66667 -98,-12 z"
+       id="btn_zhzw"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1572.6667,542.3622 -12,78.66667 -94,41.33333 -34.6667,-32 -18,-78.66666 55.3333,-47.33334 z"
+       id="btn_hd6"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1391.3333,675.69554 -166.6666,-2.66667 -79.3334,-96.66667 94,-97.33333 132,40.66667 19.3334,38 26.6666,76 z"
+       id="btn_wlw"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1192,757.02887 94,-64.66667 111.3333,1.33334 46,128.66666 -161.3333,56 -104,-42 z"
+       id="btn_zhsq"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 903.33333,971.02887 836,1009.6955 l -98,-17.3333 -0.66667,-86.66666 51.33334,-202.66667 124,-42 134.66663,14.66667 78,-67.33334 63.3334,75.33334 L 1146,835.02887 1088.6667,878.3622 934,855.69554 Z"
+       id="btn_zhdc"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+    <path
+       style="fill:#faffbd;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -28,271.69554 390,1.33333 -6,203.33333 -25.33333,6 -0.66667,9.33334 -64,-0.66667 0,-9.33333 L 188.66667,478.3622 110,439.02887 l -27.333333,44.66667 -107.333334,-8.66667 -38,-18 z"
+       id="btn_hjbf"
+       inkscape:connector-curvature="0"
+       onclick="parent.funclick(this.id)" />
+  </g>
+</svg>
