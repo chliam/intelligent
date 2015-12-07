@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "VideoMainViewController.h"
 #import "LightViewController.h"
+#import "Dialog.h"
 
 @interface ViewController ()
 
@@ -20,7 +21,7 @@
     [super viewDidLoad];
     
     [self.menu1_1 initTitleAndImg:@"居室控制" imgName:@"menu1"];
-    [self.menu1_2 initTitleAndImg:@"照明控制" imgName:@"menu2"];
+    [self.menu1_2 initTitleAndImg:@"智能照明" imgName:@"menu2"];
     [self.menu1_3 initTitleAndImg:@"电器控制" imgName:@"menu3"];
     [self.menu1_4 initTitleAndImg:@"红外控制" imgName:@"menu4"];
     [self.menu1_5 initTitleAndImg:@"设备控制" imgName:@"menu5"];
@@ -29,7 +30,7 @@
     [self.menu1_8 initTitleAndImg:@"监控检测" imgName:@"menu8"];
     [self.menu1_9 initTitleAndImg:@"场景控制" imgName:@"menu9"];
     [self.menu1_10 initTitleAndImg:@"定时查询" imgName:@"menu10"];
-    [self.menu1_11 initTitleAndImg:@"监控控制" imgName:@"menu11"];
+    [self.menu1_11 initTitleAndImg:@"视频监控" imgName:@"menu11"];
     [self.menu1_12 initTitleAndImg:@"历史查询" imgName:@"menu12"];
     
     [self.menu2_1 initTitleAndImg:@"物业通知" imgName:@"menu2_1"];
@@ -82,21 +83,14 @@
     }
     else
     {
-        self.waitLabel.text=@"正在加载数据..";
-        [self.waitIndicator startAnimating];
+        [Dialog showProgress:self withLabel:@"正在加载数据.."];
         [UIView animateWithDuration:0.3 animations:^{
-            self.viewWaitContainer.alpha=0.9;
+            
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:2 animations:^{
-                self.viewWaitContainer.alpha=1.0;
             } completion:^(BOOL finished) {
-                self.waitLabel.text=@"数据加载失败，请稍后再试!";
-                [self.waitIndicator stopAnimating];
-                [UIView animateWithDuration:2.4 animations:^{
-                    self.viewWaitContainer.alpha=0.9;
-                } completion:^(BOOL finished) {
-                    self.viewWaitContainer.alpha=0.0;
-                }];
+                [Dialog hideProgress];
+                [Dialog alert:@"数据加载失败，请稍后再试!"];
             }];
         }];
     }

@@ -30,8 +30,8 @@
 -(void)setDevice:(DeviceModel *)Device{
     _device=Device;
     self.lbName.text = [NSString stringWithFormat:@"%lld",_device.device_id];
-    //if (!_device.status) {
-    if (rand()%10 > 5) {
+    if (_device.status) {
+    //if (rand()%10 > 5) {
         self.lbStatus.text=@"在线";
         self.lbStatus.textColor=[UIColor whiteColor];
         self.lbName.textColor=[UIColor whiteColor];

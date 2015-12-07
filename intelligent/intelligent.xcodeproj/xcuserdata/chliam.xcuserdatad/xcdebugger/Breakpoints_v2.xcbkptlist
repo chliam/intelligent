@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "intelligent/LightViewController.m"
-            timestampString = "470564753.978126"
+            timestampString = "470817683.48363"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "-handleTapGesture:"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "-btnSettingClick:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "intelligent/LightViewController.m"
-            timestampString = "470564753.978126"
+            timestampString = "470817683.48363"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "-loadLightStatus:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,13 +42,141 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "intelligent/LightViewController.m"
-            timestampString = "470564862.963138"
+            timestampString = "470817683.48363"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "-handleTapGesture:"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
+            landmarkName = "-loadLightStatus:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__39-[LightViewController loadLightStatus:]_block_invoke288"
+                  moduleName = "intelligent"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Work/Code/ios6/intelligent/intelligent/intelligent/LightViewController.m"
+                  timestampString = "470816455.982314"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "282"
+                  endingLineNumber = "282"
+                  offsetFromSymbolStart = "416">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__39-[LightViewController loadLightStatus:]_block_invoke288"
+                  moduleName = "intelligent"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Work/Code/ios6/intelligent/intelligent/intelligent/LightViewController.m"
+                  timestampString = "470816455.983544"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "282"
+                  endingLineNumber = "282"
+                  offsetFromSymbolStart = "440">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "intelligent/VideoMainViewController.m"
+            timestampString = "470821041.438359"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "-txtBeginEditing:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[VideoMainViewController txtBeginEditing:]"
+                  moduleName = "intelligent"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Work/Code/ios6/intelligent/intelligent/intelligent/VideoMainViewController.m"
+                  timestampString = "470819347.584703"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__43-[VideoMainViewController txtBeginEditing:]_block_invoke"
+                  moduleName = "intelligent"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Work/Code/ios6/intelligent/intelligent/intelligent/VideoMainViewController.m"
+                  timestampString = "470819347.585996"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "intelligent/VideoMainViewController.m"
+            timestampString = "470821041.438359"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
+            landmarkName = "-txtEndEditing:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[VideoMainViewController txtEndEditing:]"
+                  moduleName = "intelligent"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Work/Code/ios6/intelligent/intelligent/intelligent/VideoMainViewController.m"
+                  timestampString = "470819347.593711"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "195"
+                  endingLineNumber = "195"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[VideoMainViewController txtEndEditing:]_block_invoke"
+                  moduleName = "intelligent"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Work/Code/ios6/intelligent/intelligent/intelligent/VideoMainViewController.m"
+                  timestampString = "470819347.594816"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "196"
+                  endingLineNumber = "196"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

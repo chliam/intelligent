@@ -16,19 +16,32 @@
 @property (weak, nonatomic) IBOutlet UIView *viewDeviceContainer;
 @property (weak, nonatomic) IBOutlet UIView *viewPlayer;
 @property (weak, nonatomic) IBOutlet UITableView *tableDevice;
-@property (weak, nonatomic) IBOutlet UIView *viewWaitContainer;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *waitIndicator;
-@property (weak, nonatomic) IBOutlet UILabel *waitLabel;
+@property (weak, nonatomic) IBOutlet UIButton *btnUp;
+@property (weak, nonatomic) IBOutlet UIButton *btnLeft;
+@property (weak, nonatomic) IBOutlet UIButton *btnDown;
+@property (weak, nonatomic) IBOutlet UIButton *btnRight;
+@property (weak, nonatomic) IBOutlet UIView *viewDeviceContainerCollspe;
 
-//@property (weak, nonatomic) IBOutlet UIButton *btnUp;
-//@property (weak, nonatomic) IBOutlet UIButton *btnUp;
-//@property (weak, nonatomic) IBOutlet UIButton *btnUp;
-//@property (weak, nonatomic) IBOutlet UIButton *btnUp;
+@property (weak, nonatomic) IBOutlet UIView *viewSettingContainer;
+@property (weak, nonatomic) IBOutlet UIView *viewSetting;
+@property (weak, nonatomic) IBOutlet UILabel *lbSettingTitle;
+@property (weak, nonatomic) IBOutlet UILabel *lbURL;
+@property (weak, nonatomic) IBOutlet UITextField *txtURL;
+@property (weak, nonatomic) IBOutlet UILabel *lbAppid;
+@property (weak, nonatomic) IBOutlet UITextField *txtAppid;
+@property (weak, nonatomic) IBOutlet UILabel *lbAuth;
+@property (weak, nonatomic) IBOutlet UITextField *txtAuth;
+@property (weak, nonatomic) IBOutlet UIButton *btnSaveSetting;
+@property (weak, nonatomic) IBOutlet UIButton *btnCancelSetting;
 
 - (IBAction)btnBackClick:(id)sender;
-- (IBAction)btnUpClick:(id)sender;
-- (IBAction)btnLeftClick:(id)sender;
-- (IBAction)btnDownClick:(id)sender;
-- (IBAction)btnRightClick:(id)sender;
+- (IBAction)btnSetingClick:(id)sender;
+- (IBAction)btnCllospeClick:(id)sender;
+- (IBAction)btnExpandClick:(id)sender;
+
+- (IBAction)btnSaveSettingClick:(id)sender;
+- (IBAction)btnCancelSettingClick:(id)sender;
+- (IBAction)txtBeginEditing:(id)sender;
+- (IBAction)txtEndEditing:(id)sender;
 
 @end

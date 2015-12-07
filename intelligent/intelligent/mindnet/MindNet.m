@@ -10,6 +10,7 @@
 #import <qysdk/QYSession.h>
 #import "DeviceModel.h"
 #import <qysdk/QYView.h>
+#import "Data.h"
 
 @interface MindNet()<QYSessionDelegate>
 {
@@ -45,10 +46,10 @@
     [QYSession InitSDK: QY_LOG_INFO];
     session = [[QYSession alloc] init];
     NSLog(@"start login");
-    [session SetServer:@"117.28.255.16" port: 39100];
+    [session SetServer:[Data instance].cameraServerURL port: 39100];
     //此接口现在登陆失败，成功登陆sdk账户名和密码需要联系厂商获取
-    [session ViewerLogin:@"wholeally"
-                    auth:@"czFYScb5pAu+Ze7rXhGh/1IBvfvPWHBZfhr/Gnq1U2/fF5Y3QVq111IBvfvPWHBZfhr/Gnq1U28f8vVVUCUM60yqjrrwJvdss3WNn7/G5ik="callBack:^(int32_t ret) {
+    [session ViewerLogin:[Data instance].cameraServerAppid
+                    auth:[Data instance].cameraServerAuth callBack:^(int32_t ret) {
                         if(ret==0)
                         {
                             _hasLogin=YES;

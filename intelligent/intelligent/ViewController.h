@@ -55,10 +55,6 @@
 @property (weak, nonatomic) IBOutlet MenuButtion *menu3_8;
 
 
-@property (weak, nonatomic) IBOutlet UIView *viewWaitContainer;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *waitIndicator;
-@property (weak, nonatomic) IBOutlet UILabel *waitLabel;
-
 
 - (IBAction)btnMenuClick:(id)sender;
 
