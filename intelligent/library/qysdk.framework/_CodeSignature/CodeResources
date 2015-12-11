@@ -6,27 +6,27 @@
 	<dict>
 		<key>Headers/QYMind.h</key>
 		<data>
-		JCzpqDMMnjQN5trJmrHIV/Qe5rM=
+		t9riXs72DDSgOdoRZzwjUwb+2vc=
 		</data>
 		<key>Headers/QYSession.h</key>
 		<data>
-		n7ODlE7V1KY0QKdIV6RaiX6MBKo=
+		8udLOkgs501xtclkjfYAyIW0GX4=
 		</data>
 		<key>Headers/QYSessionEX.h</key>
 		<data>
-		PV97l2SSuUAJuJKa/iBV/e/A/80=
+		nOIYKepCaRu6GlWinqTX7y3oBmU=
 		</data>
 		<key>Headers/QYType.h</key>
 		<data>
-		KH9hR3MAh5BT/Z1qs8oPzmH+CLE=
+		ItsxHqmKoXO7x671jZhLHNM4Fgs=
 		</data>
 		<key>Headers/QYView.h</key>
 		<data>
-		fAX45memNGWCR5vE/Gts5P4w6jk=
+		TqOAnAl+HJnDM+PPyWlVFOYtm+I=
 		</data>
 		<key>Headers/netsdk_st.h</key>
 		<data>
-		Nps8oZYdFahniK40+6SPQmDtQtc=
+		flGz4Vh7Agj+qmi4hlkkpsFfpDg=
 		</data>
 		<key>Headers/qysdk.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WvLlosSkUq2x9rxyWszKD99PdEw=
+		d5cVcpCatL8bDmG80dwyv1LSSSo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -173,27 +173,27 @@
 	<dict>
 		<key>Headers/QYMind.h</key>
 		<data>
-		JCzpqDMMnjQN5trJmrHIV/Qe5rM=
+		t9riXs72DDSgOdoRZzwjUwb+2vc=
 		</data>
 		<key>Headers/QYSession.h</key>
 		<data>
-		n7ODlE7V1KY0QKdIV6RaiX6MBKo=
+		8udLOkgs501xtclkjfYAyIW0GX4=
 		</data>
 		<key>Headers/QYSessionEX.h</key>
 		<data>
-		PV97l2SSuUAJuJKa/iBV/e/A/80=
+		nOIYKepCaRu6GlWinqTX7y3oBmU=
 		</data>
 		<key>Headers/QYType.h</key>
 		<data>
-		KH9hR3MAh5BT/Z1qs8oPzmH+CLE=
+		ItsxHqmKoXO7x671jZhLHNM4Fgs=
 		</data>
 		<key>Headers/QYView.h</key>
 		<data>
-		fAX45memNGWCR5vE/Gts5P4w6jk=
+		TqOAnAl+HJnDM+PPyWlVFOYtm+I=
 		</data>
 		<key>Headers/netsdk_st.h</key>
 		<data>
-		Nps8oZYdFahniK40+6SPQmDtQtc=
+		flGz4Vh7Agj+qmi4hlkkpsFfpDg=
 		</data>
 		<key>Headers/qysdk.h</key>
 		<data>

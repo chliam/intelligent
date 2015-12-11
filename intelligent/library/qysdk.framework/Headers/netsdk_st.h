@@ -159,6 +159,7 @@ typedef struct{
 }st_chnrec_days;
 typedef struct{
     int enable;//录像状态
+    int curindex;
     st_chnrec_days days[7];
 }st_chnrec_sta;
 

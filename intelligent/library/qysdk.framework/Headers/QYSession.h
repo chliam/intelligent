@@ -14,6 +14,8 @@
 #import "QYMind.h"
 
 
+
+
 @protocol QYSessionDelegate <NSObject>
 
 
@@ -72,7 +74,8 @@
 // 获取通道列表, 返回 QY_CAHNNEL_INFO 列表
 - (void) GetChannelList:(uint64_t)devID callBackWithArray:(void (^)(int32_t ret,NSMutableArray* array)) callback;
 
-
+// 远程截图
+- (void)GetDeviceCapture:(uint64_t)chanelId savePaht:(NSString*) path callBack:(void (^)(int32_t ret)) callback;
 
 // 获取全部报警信息, 返回 QY_ALARMLIST 列表
 // pageIndex 从1开始

@@ -13,8 +13,7 @@
 
 
 -(id)initWithSession:(int) session;
-
--(void)GetChanelAbility:(uint64_t) ChanelNo
+-(void)QYChanelAbility:(uint64_t) ChanelNo
                callBack:(void (^)(int32_t ret,QY_DEVICE_FUN function)) callback;
 
 

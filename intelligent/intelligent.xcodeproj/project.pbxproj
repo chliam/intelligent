@@ -21,7 +21,6 @@
 		D26E1ACB1C0E749E008E09D2 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D26E1AC61C0E749E008E09D2 /* SVProgressHUD.bundle */; };
 		D26E1ACC1C0E749E008E09D2 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E1AC81C0E749E008E09D2 /* SVProgressHUD.m */; };
 		D26E1AD01C0EDA12008E09D2 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E1ACF1C0EDA12008E09D2 /* Data.m */; };
-		D27808691BFAD664002772DB /* qysdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808681BFAD664002772DB /* qysdk.framework */; };
 		D278086D1BFAD94C002772DB /* VideoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D278086C1BFAD94C002772DB /* VideoMainViewController.m */; };
 		D278086F1BFB039E002772DB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D278086E1BFB039E002772DB /* AVFoundation.framework */; };
 		D27808711BFB03BA002772DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808701BFB03BA002772DB /* AudioToolbox.framework */; };
@@ -33,6 +32,7 @@
 		D27808831BFB167F002772DB /* CameraTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D27808821BFB167F002772DB /* CameraTableViewCell.m */; };
 		D2C2EEA31C0D434D00E446B0 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C2EEA21C0D434D00E446B0 /* HttpRequest.m */; };
 		D2C2EEA61C0D43A900E446B0 /* ResponesResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C2EEA51C0D43A900E446B0 /* ResponesResult.m */; };
+		D2F906141C1AAD79009A3F30 /* qysdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808681BFAD664002772DB /* qysdk.framework */; };
 		D2F9F4781C06985800E80268 /* libSVGKit-iOS.1.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9F3F71C06985800E80268 /* libSVGKit-iOS.1.2.0.a */; };
 		D2F9F47B1C0698B900E80268 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9F47A1C0698B900E80268 /* CoreText.framework */; };
 		D2F9F47D1C0698C300E80268 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9F47C1C0698C300E80268 /* CoreImage.framework */; };
@@ -239,6 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F906141C1AAD79009A3F30 /* qysdk.framework in Frameworks */,
 				D2F9F4851C06991800E80268 /* UIKit.framework in Frameworks */,
 				D2F9F4831C06990C00E80268 /* CoreGraphics.framework in Frameworks */,
 				D2F9F4811C0698FB00E80268 /* QuartzCore.framework in Frameworks */,
@@ -251,7 +252,6 @@
 				D27808731BFB03CA002772DB /* OpenAL.framework in Frameworks */,
 				D27808711BFB03BA002772DB /* AudioToolbox.framework in Frameworks */,
 				D278086F1BFB039E002772DB /* AVFoundation.framework in Frameworks */,
-				D27808691BFAD664002772DB /* qysdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,13 +855,15 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = intelligent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/library",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishitong.intelligent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -880,13 +882,15 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = intelligent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/library",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishitong.intelligent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

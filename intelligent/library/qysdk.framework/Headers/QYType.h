@@ -70,7 +70,7 @@ typedef struct
     uint64_t        channelID;          // 通道ID
     int             type;               // 报警类型
     char            content[256];       // 报警内容
-    char            time[256];          // 报警时间
+    char            time[64];          // 报警时间
     char            shotUrl[256];       // 报警截图网址
     char            videoUrl[256];      // 报警录像地址
     char            actionScript[256];  // 执行脚本
@@ -239,6 +239,26 @@ typedef struct{
     int warnPlan;//报警计划
     int errorNo;//错误码
 }QY_DEVICE_FUN;
+
+//画质模式组
+typedef struct{
+    int module;//画质 1-普清 2-标清 3-高清 4-超清
+    char resolution[256];//分辨率
+    int framerate;//帧率
+    int picQuality;//质量
+}QY_CHANELCODQY_MODULES;
+//当前通道设置状态
+typedef struct{
+    int module;//当前画质模式
+    char resolution[256];//分辨率
+    int frameRate;//帧率
+    int picQuality;//质量
+    int iFrameInterval;//I帧间隔
+    int bitRateType;//码率模式 1：VBR、2：CBR、3：fixQP
+    int encondeMode;//编码模式 1:jpeg、2:h264
+}QY_CHANELCODQY_CURENTSTA;
+
+
 
 @interface QYTimeIndex : NSObject
 {

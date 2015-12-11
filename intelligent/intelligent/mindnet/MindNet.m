@@ -47,9 +47,11 @@
     session = [[QYSession alloc] init];
     NSLog(@"start login");
     [session SetServer:[Data instance].cameraServerURL port: 39100];
+
     //此接口现在登陆失败，成功登陆sdk账户名和密码需要联系厂商获取
     [session ViewerLogin:[Data instance].cameraServerAppid
                     auth:[Data instance].cameraServerAuth callBack:^(int32_t ret) {
+                        ret = 0; //TODO:Remove
                         if(ret==0)
                         {
                             _hasLogin=YES;
@@ -67,14 +69,22 @@
 
 - (void)getDeviceSuccess:(void (^)(NSArray *ret))success
 {
-    [session GetDeviceListcallBackWithArray:^(int32_t ret, NSMutableArray *array) {
-        if(ret==0)
-        {
-            success(array);
-        }
-        else
-            success(nil);
-    }];
+    //TODO:Remove
+    QY_DEVICE_INFO deviceinfo = {1000000287000, 1};
+    NSMutableArray *array = [NSMutableArray new];
+    [array addObject:[NSValue valueWithBytes:&deviceinfo objCType:@encode(QY_DEVICE_INFO)]];
+    success(array);
+    
+//    [session GetDeviceListcallBackWithArray:^(int32_t ret, NSMutableArray *array) {
+//        if(ret==0)
+//        {
+//            success(array);
+//        }
+//        else
+//        {
+//            success(nil);
+//        }
+//    }];
 }
 
 -(void)getChanelwithDevid:(DeviceModel*) device
@@ -82,9 +92,18 @@
 {
     [session GetChannelList:device.device_id callBackWithArray:^(int32_t ret, NSMutableArray *array) {
         if(ret==0)
+        {
             success(array);
+        }
         else
-            success(nil);
+        {
+            //TODO:Remove
+            QY_CHANNEL_INFO channelInfo = {1000000287001, 1,1};
+            array = [NSMutableArray arrayWithObjects:[NSValue valueWithBytes:&channelInfo objCType:@encode(QY_CHANNEL_INFO)], nil];
+            success(array);
+            
+            //success(nil);
+        }
     }];
     
 }

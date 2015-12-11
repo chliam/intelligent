@@ -23,10 +23,14 @@
     UITapGestureRecognizer* tapGestureRecognizer;
     NSDictionary *allLayersDic;
     
-    NSMutableDictionary *lightStatesDic; //key=lightLayerId value=isLightOpen
+    NSMutableDictionary *lightStatesDic; //key=lightId value=isLightOpen
+    NSMutableDictionary *lightLayersDic; //key=lightId value=lightLayerId
+    
     NSDictionary *hitControlLightDic; //key＝layerId  value = lightIdList
     UIColor *lightOpenColor;
     UIColor *lightCloseColor;
+    UIColor *doorOpenColor;
+    UIColor *doorCloseColor;
     NSTimer *cycleLoadTimer;
     BOOL isServerOK;
     CGRect viewSettingOriFrame;
@@ -48,7 +52,10 @@
         viewSettingEditFrame = CGRectMake(viewSettingOriFrame.origin.x, viewSettingOriFrame.origin.y-60, viewSettingOriFrame.size.width, viewSettingOriFrame.size.height);
         
         lightCloseColor = [UIColor lightGrayColor];
+        doorCloseColor = [UIColor lightGrayColor];
         lightOpenColor = [UIColor yellowColor];
+        doorOpenColor = [UIColor blueColor];
+        
         lightStatesDic = [NSMutableDictionary dictionaryWithDictionary:@{@"hjbf":@false,
                                                                          @"zhdc":@false,
                                                                          @"zhsq":@false,
@@ -61,47 +68,105 @@
                                                                          @"ggaq":@false,
                                                                          @"zhjt":@false,
                                                                          @"hd6":@false,
-                                                                         @"tyyuan":@false}];
+                                                                         @"tyyuan":@false,
+                                                                         @"hjbf_ds_ty":@false,
+                                                                         @"zhdc_ds_ty":@false,
+                                                                         @"zhsq_ds_ty":@false,
+                                                                         @"wlw_ds_ty":@false,
+                                                                         @"zhzw_ds_ty":@false,
+                                                                         @"zhcs_ds_ty":@false,
+                                                                         @"qyxxq_ds_ty":@false,
+                                                                         @"zhjj_ds_ty":@false,
+                                                                         @"xt_ds_ty":@false,
+                                                                         @"ggaq_ds_ty":@false,
+                                                                         @"zhjt_ds_ty":@false,
+                                                                         @"hd6_ds_ty":@false,
+                                                                         @"tyyuan_ds_ty":@false}];
         
-        hitControlLightDic = @{@"hjbf":@[@"hjbf"],
-                               @"zhdc":@[@"zhdc"],
-                               @"zhsq":@[@"zhsq"],
-                               @"wlw":@[@"wlw"],
-                               @"zhzw":@[@"zhzw"],
-                               @"zhcs":@[@"zhcs"],
-                               @"qyxxq":@[@"qyxxq"],
-                               @"zhjj":@[@"zhjj"],
-                               @"xt":@[@"xt"],
-                               @"ggaq":@[@"ggaq"],
-                               @"zhjt":@[@"zhjt"],
-                               @"hd6":@[@"hd6"],
-                               @"tyyuan":@[@"tyyuan"],
-                               @"txt_hjbf":@[@"hjbf"],
-                               @"text3676":@[@"hjbf"],
-                               @"txt_zhdc":@[@"zhdc"],
-                               @"text3718":@[@"zhdc"],
-                               @"txt_zhsq":@[@"zhsq"],
-                               @"text3742":@[@"zhsq"],
-                               @"txt_wlw":@[@"wlw"],
-                               @"text3724":@[@"wlw"],
-                               @"txt_zhzw":@[@"zhzw"],
-                               @"text3730":@[@"zhzw"],
-                               @"txt_zhcs":@[@"zhcs"],
-                               @"text3712":@[@"zhcs"],
-                               @"txt_qyxxq":@[@"qyxxq"],
-                               @"text3706":@[@"qyxxq"],
-                               @"txt_zhjj":@[@"zhjj"],
-                               @"text3700":@[@"zhjj"],
-                               @"txt_xt":@[@"xt"],
-                               @"text3682":@[@"xt"],
-                               @"txt_ggaq":@[@"ggaq"],
-                               @"text3670":@[@"ggaq"],
-                               @"txt_zhjt":@[@"zhjt"],
-                               @"text3688":@[@"zhjj"],
-                               @"txt_hd6":@[@"hd6"],
-                               @"text3736":@[@"hd6"],
-                               @"txt_tyyuan":@[@"tyyuan"],
-                               @"text3694":@[@"tyyuan"]};
+        lightLayersDic = [NSMutableDictionary dictionaryWithDictionary:@{@"hjbf":@"hjbf",
+                                                                         @"zhdc":@"zhdc",
+                                                                         @"zhsq":@"zhsq",
+                                                                         @"wlw":@"wlw",
+                                                                         @"zhzw":@"zhzw",
+                                                                         @"zhcs":@"zhcs",
+                                                                         @"qyxxq":@"qyxxq",
+                                                                         @"zhjj":@"zhjj",
+                                                                         @"xt":@"xt",
+                                                                         @"ggaq":@"ggaq",
+                                                                         @"zhjt":@"zhjt",
+                                                                         @"hd6":@"hd6",
+                                                                         @"tyyuan":@"tyyuan",
+                                                                         @"hjbf_ds_ty":@"btn_hjbf_ds_ty-hjbf_dj",
+                                                                         @"zhdc_ds_ty":@"btn_zhdc_ds_ty-zhdc_dj",
+                                                                         @"zhsq_ds_ty":@"btn_zhsq_ds_ty-zhsq_dj",
+                                                                         @"wlw_ds_ty":@"btn_wlw_ds_ty-wlw_dj",
+                                                                         @"zhzw_ds_ty":@"btn_zhzw_ds_ty-zhzw_dj",
+                                                                         @"zhcs_ds_ty":@"btn_zhcs_ds_ty-zhcs_dj",
+                                                                         @"qyxxq_ds_ty":@"btn_qyxxq_ds_ty-qyxxq_dj",
+                                                                         @"zhjj_ds_ty":@"btn_zhjj_ds_ty-zhjj_dj",
+                                                                         @"xt_ds_ty":@"btn_xt_ds_ty-xt_dj",
+                                                                         @"ggaq_ds_ty": @"btn_ggaq_ds_ty-ggaq_dj",
+                                                                         @"zhjt_ds_ty":@"btn_zhjt_ds_ty-zhjt_dj",
+                                                                         @"hd6_ds_ty":@"btn_hd6_ds_ty-hd6_dj",
+                                                                         @"tyyuan_ds_ty":@"btn_tyyuan_ds_ty-tyyuan_dj"}];
+        
+        hitControlLightDic = @{@"hjbf":@[@"hjbf",@"hjbf_ds_ty"],
+                               @"zhdc":@[@"zhdc",@"zhdc_ds_ty"],
+                               @"zhsq":@[@"zhsq",@"zhsq_ds_ty"],
+                               @"wlw":@[@"wlw",@"wlw_ds_ty"],
+                               @"zhzw":@[@"zhzw",@"zhzw_ds_ty"],
+                               @"zhcs":@[@"zhcs",@"zhcs_ds_ty"],
+                               @"qyxxq":@[@"qyxxq",@"qyxxq_ds_ty"],
+                               @"zhjj":@[@"zhjj",@"zhjj_ds_ty"],
+                               @"xt":@[@"xt",@"xt_ds_ty"],
+                               @"ggaq":@[@"ggaq",@"ggaq_ds_ty"],
+                               @"zhjt":@[@"zhjt",@"zhjt_ds_ty"],
+                               @"hd6":@[@"hd6",@"hd6_ds_ty"],
+                               @"tyyuan":@[@"tyyuan",@"tyyuan_ds_ty"],
+                               @"txt_hjbf":@[@"hjbf",@"hjbf_ds_ty"],
+                               @"text3676":@[@"hjbf",@"hjbf_ds_ty"],
+                               @"txt_zhdc":@[@"zhdc",@"zhdc_ds_ty"],
+                               @"text3718":@[@"zhdc",@"zhdc_ds_ty"],
+                               @"txt_zhsq":@[@"zhsq",@"zhsq_ds_ty"],
+                               @"text3742":@[@"zhsq",@"zhsq_ds_ty"],
+                               @"txt_wlw":@[@"wlw",@"wlw_ds_ty"],
+                               @"text3724":@[@"wlw",@"wlw_ds_ty"],
+                               @"txt_zhzw":@[@"zhzw",@"zhzw_ds_ty"],
+                               @"text3730":@[@"zhzw",@"zhzw_ds_ty"],
+                               @"txt_zhcs":@[@"zhcs",@"zhcs_ds_ty"],
+                               @"text3712":@[@"zhcs",@"zhcs_ds_ty"],
+                               @"txt_qyxxq":@[@"qyxxq",@"qyxxq_ds_ty"],
+                               @"text3706":@[@"qyxxq",@"qyxxq_ds_ty"],
+                               @"txt_zhjj":@[@"zhjj",@"zhjj_ds_ty"],
+                               @"text3700":@[@"zhjj",@"zhjj_ds_ty"],
+                               @"txt_xt":@[@"xt",@"xt_ds_ty"],
+                               @"text3682":@[@"xt",@"xt_ds_ty"],
+                               @"txt_ggaq":@[@"ggaq",@"ggaq_ds_ty"],
+                               @"text3670":@[@"ggaq",@"ggaq_ds_ty"],
+                               @"txt_zhjt":@[@"zhjt",@"zhjt_ds_ty"],
+                               @"text3688":@[@"zhjj",@"zhjt_ds_ty"],
+                               @"txt_hd6":@[@"hd6",@"hd6_ds_ty"],
+                               @"text3736":@[@"hd6",@"hd6_ds_ty"],
+                               @"txt_tyyuan":@[@"tyyuan",@"tyyuan_ds_ty"],
+                               @"text3694":@[@"tyyuan",@"tyyuan_ds_ty"],
+                               @"btn_hjbf_ds_ty-hjbf_dj":@[@"hjbf_ds_ty"],
+                               @"btn_zhdc_ds_ty-zhdc_dj":@[@"zhdc_ds_ty"],
+                               @"btn_zhsq_ds_ty-zhsq_dj":@[@"zhsq_ds_ty"],
+                               @"btn_wlw_ds_ty-wlw_dj":@[@"wlw_ds_ty"],
+                               @"btn_zhzw_ds_ty-zhzw_dj":@[@"zhzw_ds_ty"],
+                               @"btn_zhcs_ds_ty-zhcs_dj":@[@"zhcs_ds_ty"],
+                               @"btn_qyxxq_ds_ty-qyxxq_dj":@[@"qyxxq_ds_ty"],
+                               @"btn_zhjj_ds_ty-zhjj_dj":@[@"zhjj_ds_ty"],
+                               @"btn_xt_ds_ty-xt_dj":@[@"xt_ds_ty"],
+                               @"btn_ggaq_ds_ty-ggaq_dj":@[@"ggaq_ds_ty"],
+                               @"btn_zhjt_ds_ty-zhjt_dj":@[@"zhjt_ds_ty"],
+                               @"btn_hd6_ds_ty-hd6_dj":@[@"hd6_ds_ty"],
+                               @"btn_tyyuan_ds_ty-tyyuan_dj":@[@"tyyuan_ds_ty"],
+                               @"group_G_All":@[@"hjbf",@"zhdc",@"zhsq",@"wlw",@"zhzw",@"zhcs",@"qyxxq",@"zhjj",@"xt",@"ggaq",@"zhjt",@"hd6",@"tyyuan",@"hjbf_ds_ty",@"zhdc_ds_ty",@"zhsq_ds_ty",@"wlw_ds_ty",@"zhzw_ds_ty",@"zhcs_ds_ty",@"qyxxq_ds_ty",@"zhjj_ds_ty",@"xt_ds_ty",@"ggaq_ds_ty",@"zhjt_ds_ty",@"hd6_ds_ty",@"tyyuan_ds_ty"],
+                               
+                               @"group_G1":@[@"hjbf",@"xt",@"ggaq",@"zhjt",@"tyyuan",@"hjbf_ds_ty",@"xt_ds_ty",@"ggaq_ds_ty",@"zhjt_ds_ty",@"tyyuan_ds_ty"],
+                               
+                               @"group_G2":@[@"zhdc",@"zhsq",@"wlw",@"zhzw",@"zhcs",@"qyxxq",@"zhjj",@"hd6",@"zhdc_ds_ty",@"zhsq_ds_ty",@"wlw_ds_ty",@"zhzw_ds_ty",@"zhcs_ds_ty",@"qyxxq_ds_ty",@"zhjj_ds_ty",@"hd6_ds_ty"]};
         
         loadSvgURL = [NSString stringWithFormat:@"%@/svg/Showroom.svg",[Data instance].lightControlServerURL];
         getLightStatesURL = [NSString stringWithFormat:@"%@/realtime/getinterfacedata",[Data instance].lightControlServerURL];
@@ -114,6 +179,8 @@
         svgImage.size = CGSizeApplyAffineTransform(svgImage.size, CGAffineTransformMakeScale(scale,scale));
         CGRect frame =CGRectMake(0, (self.view.frame.size.height-svgImage.size.height)/2, svgImage.size.width, svgImage.size.height);
         
+      
+        
         dispatch_async(MAINQUEUE, ^{
             contentView = [[SVGKLayeredImageView alloc] initWithFrame:frame];
             [contentView setImage:svgImage];
@@ -124,6 +191,13 @@
                 tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
             }
             [contentView addGestureRecognizer:tapGestureRecognizer];
+            // 缩放手势
+            UIPinchGestureRecognizer *pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchView:)];
+            [contentView addGestureRecognizer:pinchGestureRecognizer];
+            // 移动手势
+            UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panView:)];
+            [contentView addGestureRecognizer:panGestureRecognizer];
+            
             allLayersDic = [svgImage dictionaryOfLayers];
             for (NSString *key in lightStatesDic) {
                 CALayer* layer = [allLayersDic objectForKey:key];
@@ -160,7 +234,7 @@
     }
 }
 
--(void)viewWillDisappear:(BOOL)animated{    
+-(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [self stopCycleLoad];
@@ -292,20 +366,29 @@
         if (responesResult.isSuccess) {
             
             NSArray *openArr = [[responesResult.value objectForKey:@"status"] allKeys];
-            for (NSString *key in lightStatesDic.allKeys) {
-                if ([openArr containsObject:key]) {
-                    [lightStatesDic setValue:@true forKey:key];
-                    CALayer* layer = [allLayersDic objectForKey:key];
+            for (NSString *devID in lightStatesDic.allKeys) {
+                NSString *layerID = [lightLayersDic objectForKey:devID];
+                if ([openArr containsObject:devID]) {
+                    [lightStatesDic setValue:@true forKey:devID];
+                    CALayer* layer = [allLayersDic objectForKey:layerID];
                     if (layer && [layer isKindOfClass:[CAShapeLayer class]]) {
                         CAShapeLayer* shapeLayer = (CAShapeLayer*)layer;
-                        shapeLayer.fillColor = lightOpenColor.CGColor;
+                        if ([layerID containsString:@"_ds_ty"]) {
+                            shapeLayer.fillColor = doorOpenColor.CGColor;
+                        }else{
+                            shapeLayer.fillColor = lightOpenColor.CGColor;
+                        }
                     }
                 }else{
-                    [lightStatesDic setValue:@false forKey:key];
-                    CALayer* layer = [allLayersDic objectForKey:key];
+                    [lightStatesDic setValue:@false forKey:devID];
+                    CALayer* layer = [allLayersDic objectForKey:layerID];
                     if (layer && [layer isKindOfClass:[CAShapeLayer class]]) {
                         CAShapeLayer* shapeLayer = (CAShapeLayer*)layer;
-                        shapeLayer.fillColor = lightCloseColor.CGColor;
+                        if ([layerID containsString:@"_ds_ty"]) {
+                            shapeLayer.fillColor = doorCloseColor.CGColor;
+                        }else{
+                            shapeLayer.fillColor = lightCloseColor.CGColor;
+                        }
                     }
                 }
             }
@@ -322,17 +405,17 @@
     NSArray *controlLightArr = [hitControlLightDic objectForKey:hitLayerKey];
     if (controlLightArr) {
         NSMutableDictionary *tmpLightStatesDic = [NSMutableDictionary dictionaryWithDictionary:lightStatesDic];
-        BOOL allOpen = true;
+        BOOL allClose = true;
         for (NSString *key in controlLightArr) {
-            if ([[lightStatesDic objectForKey:key]  isEqual: @false]) {
-                allOpen = false;
+            if ([[lightStatesDic objectForKey:key]  isEqual: @true]) {
+                allClose = false;
             }
         }
         for (NSString *key in controlLightArr) {
-            if (allOpen == true) {
-                [tmpLightStatesDic setObject:@false forKey:key];
-            }else{
+            if (allClose == true) {
                 [tmpLightStatesDic setObject:@true forKey:key];
+            }else{
+                [tmpLightStatesDic setObject:@false forKey:key];
             }
         }
         
@@ -372,6 +455,27 @@
 -(void)autoLoadLightStatus{
     if (isServerOK) {
         [self loadLightStatus:YES];
+    }
+}
+
+// 处理缩放手势
+- (void) pinchView:(UIPinchGestureRecognizer *)pinchGestureRecognizer
+{
+    UIView *view = pinchGestureRecognizer.view;
+    if (pinchGestureRecognizer.state == UIGestureRecognizerStateBegan || pinchGestureRecognizer.state == UIGestureRecognizerStateChanged) {
+        view.transform = CGAffineTransformScale(view.transform, pinchGestureRecognizer.scale, pinchGestureRecognizer.scale);
+        pinchGestureRecognizer.scale = 1;
+    }
+}
+
+// 处理拖拉手势
+- (void) panView:(UIPanGestureRecognizer *)panGestureRecognizer
+{
+    UIView *view = panGestureRecognizer.view;
+    if (panGestureRecognizer.state == UIGestureRecognizerStateBegan || panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
+        CGPoint translation = [panGestureRecognizer translationInView:view.superview];
+        [view setCenter:(CGPoint){view.center.x + translation.x, view.center.y + translation.y}];
+        [panGestureRecognizer setTranslation:CGPointZero inView:view.superview];
     }
 }
 

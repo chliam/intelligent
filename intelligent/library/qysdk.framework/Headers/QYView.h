@@ -9,6 +9,7 @@
 #ifndef QYView_h
 #define QYView_h
 #include "QYType.h"
+
 #import <UIKit/UIKit.h>
 
 @protocol QYViewDelegate <NSObject>
@@ -19,10 +20,10 @@
 -(void)onDisConnect:(QY_DISCONNECT_REASON) reason;
 
 //  音量回调通知
--(void)onVolumeChange:(double) voiceValue;
+-(void)onVolumeChange:(float) voiceValue;
 
 //  回放时间通知
--(void)onReplayTimeChange:(struct tm) time;
+-(void)onReplayTimeChange:(QY_TIME) time;
 
 //  画布显示画面通知
 -(void)onVideoSizeChange:(int) width height:(int) height;
@@ -51,15 +52,16 @@
 // 云台控制 
 - (void) CtrlPtz: (int)duration action: (enum QY_PTZ_TYPE) action callBack:(void (^)(int32_t ret)) callback;
 
-// 音频控制 mode 0: 打开视频和音频1: 只打开视频2: 只打开音频
-- (void) CtrlAudio: (int) mode callBack:(void (^)(int32_t ret)) callback;
+// 是否播放声音
+- (void) CtrlAudio:(BOOL) open;
 
 // 控制回放0:是停止  1：播放
 - (void) CtrlReplayTime: (QY_TIME) ttm ctrl:(int) ctrl callBack:(void (^)(int32_t ret)) callback;
 
 // 对讲
 -(void) CtrlTalk:(BOOL) talkend;
-
+// 播放画面速度
+-(int) NetSpeed;
 // 截图
 -(int)Capture:(NSString*) savePath;
 
