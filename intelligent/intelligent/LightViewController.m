@@ -172,15 +172,13 @@
         getLightStatesURL = [NSString stringWithFormat:@"%@/realtime/getinterfacedata",[Data instance].lightControlServerURL];
         setLightStatesURL = [NSString stringWithFormat:@"%@/realtime/setstatus",[Data instance].lightControlServerURL];
         self.txtServerURL.text = [Data instance].lightControlServerURL;
-        svgImage = [SVGKImage imageNamed:@"Showroom"];
+        svgImage = [SVGKImage imageNamed:@"Showroom.svg"];
         float scaleX = self.view.frame.size.width/svgImage.size.width;
         float scaleY = self.view.frame.size.height/svgImage.size.height;
         float scale = MIN(scaleX, scaleY);
         svgImage.size = CGSizeApplyAffineTransform(svgImage.size, CGAffineTransformMakeScale(scale,scale));
         CGRect frame =CGRectMake(0, (self.view.frame.size.height-svgImage.size.height)/2, svgImage.size.width, svgImage.size.height);
-        
-      
-        
+                      
         dispatch_async(MAINQUEUE, ^{
             contentView = [[SVGKLayeredImageView alloc] initWithFrame:frame];
             [contentView setImage:svgImage];

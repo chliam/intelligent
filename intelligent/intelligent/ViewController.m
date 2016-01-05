@@ -10,6 +10,7 @@
 #import "VideoMainViewController.h"
 #import "LightViewController.h"
 #import "Dialog.h"
+#import "ScreenViewController.h"
 
 @interface ViewController ()
 
@@ -24,7 +25,7 @@
     [self.menu1_2 initTitleAndImg:@"智能照明" imgName:@"menu2"];
     [self.menu1_3 initTitleAndImg:@"电器控制" imgName:@"menu3"];
     [self.menu1_4 initTitleAndImg:@"红外控制" imgName:@"menu4"];
-    [self.menu1_5 initTitleAndImg:@"设备控制" imgName:@"menu5"];
+    [self.menu1_5 initTitleAndImg:@"大屏控制" imgName:@"menu5"];
     [self.menu1_6 initTitleAndImg:@"浇灌控制" imgName:@"menu6"];
     [self.menu1_7 initTitleAndImg:@"门窗检测" imgName:@"menu7"];
     [self.menu1_8 initTitleAndImg:@"监控检测" imgName:@"menu8"];
@@ -79,7 +80,11 @@
     {
         LightViewController *controller =  [self.storyboard instantiateViewControllerWithIdentifier:@"LightViewController"];
         [self presentViewController:controller animated:YES completion:nil];
-        
+    }
+    else if ([sender isEqual:self.menu1_5])
+    {
+        ScreenViewController *controller =  [self.storyboard instantiateViewControllerWithIdentifier:@"ScreenViewController"];
+        [self presentViewController:controller animated:YES completion:nil];
     }
     else
     {
@@ -123,7 +128,7 @@
 
 - (IBAction)btnJiaTingClick:(id)sender {
     //[self addOverlay:sender];
-    self.lbTitle.text=@"智慧家庭";
+    self.lbTitle.text=@"智慧展厅";
     self.viewShangQuan.alpha=0.0;
     self.viewSheQu.alpha=0.0;
     

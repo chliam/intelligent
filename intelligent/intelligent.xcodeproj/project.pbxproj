@@ -30,6 +30,10 @@
 		D278087C1BFB04D1002772DB /* MindNet.m in Sources */ = {isa = PBXBuildFile; fileRef = D278087B1BFB04D1002772DB /* MindNet.m */; };
 		D27808801BFB0532002772DB /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D278087F1BFB0532002772DB /* DeviceModel.m */; };
 		D27808831BFB167F002772DB /* CameraTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D27808821BFB167F002772DB /* CameraTableViewCell.m */; };
+		D27CF82D1C3B5620007D5211 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CF82C1C3B5620007D5211 /* ScreenViewController.m */; };
+		D27CF8301C3B5D16007D5211 /* ScreenCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CF82F1C3B5D16007D5211 /* ScreenCollectionViewCell.m */; };
+		D27CF8331C3B5D41007D5211 /* ScreenMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CF8321C3B5D41007D5211 /* ScreenMenuCollectionViewCell.m */; };
+		D2850A021C1EA7D70084AB8F /* Showroom.svg in Resources */ = {isa = PBXBuildFile; fileRef = D2850A011C1EA7D70084AB8F /* Showroom.svg */; };
 		D2C2EEA31C0D434D00E446B0 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C2EEA21C0D434D00E446B0 /* HttpRequest.m */; };
 		D2C2EEA61C0D43A900E446B0 /* ResponesResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C2EEA51C0D43A900E446B0 /* ResponesResult.m */; };
 		D2F906141C1AAD79009A3F30 /* qysdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808681BFAD664002772DB /* qysdk.framework */; };
@@ -94,6 +98,13 @@
 		D278087F1BFB0532002772DB /* DeviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceModel.m; sourceTree = "<group>"; };
 		D27808811BFB167F002772DB /* CameraTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraTableViewCell.h; sourceTree = "<group>"; };
 		D27808821BFB167F002772DB /* CameraTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraTableViewCell.m; sourceTree = "<group>"; };
+		D27CF82B1C3B5620007D5211 /* ScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
+		D27CF82C1C3B5620007D5211 /* ScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
+		D27CF82E1C3B5D16007D5211 /* ScreenCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenCollectionViewCell.h; sourceTree = "<group>"; };
+		D27CF82F1C3B5D16007D5211 /* ScreenCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenCollectionViewCell.m; sourceTree = "<group>"; };
+		D27CF8311C3B5D41007D5211 /* ScreenMenuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenMenuCollectionViewCell.h; sourceTree = "<group>"; };
+		D27CF8321C3B5D41007D5211 /* ScreenMenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenMenuCollectionViewCell.m; sourceTree = "<group>"; };
+		D2850A011C1EA7D70084AB8F /* Showroom.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Showroom.svg; sourceTree = "<group>"; };
 		D2C2EEA11C0D434D00E446B0 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		D2C2EEA21C0D434D00E446B0 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		D2C2EEA41C0D43A900E446B0 /* ResponesResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponesResult.h; sourceTree = "<group>"; };
@@ -288,6 +299,8 @@
 		D248E6FC1AE93CDF005E9E53 /* intelligent */ = {
 			isa = PBXGroup;
 			children = (
+				D27CF82A1C3B55B7007D5211 /* screen */,
+				D2850A011C1EA7D70084AB8F /* Showroom.svg */,
 				D26E1ABF1C0E749E008E09D2 /* Control */,
 				D2C2EEA01C0D431100E446B0 /* common */,
 				D2F9F4881C069B9200E80268 /* light */,
@@ -419,6 +432,19 @@
 				D278087F1BFB0532002772DB /* DeviceModel.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		D27CF82A1C3B55B7007D5211 /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				D27CF82B1C3B5620007D5211 /* ScreenViewController.h */,
+				D27CF82C1C3B5620007D5211 /* ScreenViewController.m */,
+				D27CF82E1C3B5D16007D5211 /* ScreenCollectionViewCell.h */,
+				D27CF82F1C3B5D16007D5211 /* ScreenCollectionViewCell.m */,
+				D27CF8311C3B5D41007D5211 /* ScreenMenuCollectionViewCell.h */,
+				D27CF8321C3B5D41007D5211 /* ScreenMenuCollectionViewCell.m */,
+			);
+			name = screen;
 			sourceTree = "<group>";
 		};
 		D2C2EEA01C0D431100E446B0 /* common */ = {
@@ -682,6 +708,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2850A021C1EA7D70084AB8F /* Showroom.svg in Resources */,
 				D248E70C1AE93CDF005E9E53 /* Main.storyboard in Resources */,
 				D248E7111AE93CDF005E9E53 /* LaunchScreen.xib in Resources */,
 				D248E70E1AE93CDF005E9E53 /* Images.xcassets in Resources */,
@@ -703,8 +730,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27CF8331C3B5D41007D5211 /* ScreenMenuCollectionViewCell.m in Sources */,
 				D248E7281AE944C2005E9E53 /* MenuButtion.m in Sources */,
 				D2C2EEA61C0D43A900E446B0 /* ResponesResult.m in Sources */,
+				D27CF8301C3B5D16007D5211 /* ScreenCollectionViewCell.m in Sources */,
 				D26E1ACC1C0E749E008E09D2 /* SVProgressHUD.m in Sources */,
 				D2F9F48B1C069BF200E80268 /* LightViewController.m in Sources */,
 				D27808801BFB0532002772DB /* DeviceModel.m in Sources */,
@@ -717,6 +746,7 @@
 				D26E1AD01C0EDA12008E09D2 /* Data.m in Sources */,
 				D278087C1BFB04D1002772DB /* MindNet.m in Sources */,
 				D248E7091AE93CDF005E9E53 /* ViewController.m in Sources */,
+				D27CF82D1C3B5620007D5211 /* ScreenViewController.m in Sources */,
 				D248E7001AE93CDF005E9E53 /* main.m in Sources */,
 				D26E1ACA1C0E749E008E09D2 /* MBProgressHUD.m in Sources */,
 			);
