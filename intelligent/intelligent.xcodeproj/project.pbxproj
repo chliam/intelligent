@@ -34,6 +34,8 @@
 		D27CF8301C3B5D16007D5211 /* ScreenCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CF82F1C3B5D16007D5211 /* ScreenCollectionViewCell.m */; };
 		D27CF8331C3B5D41007D5211 /* ScreenMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D27CF8321C3B5D41007D5211 /* ScreenMenuCollectionViewCell.m */; };
 		D2850A021C1EA7D70084AB8F /* Showroom.svg in Resources */ = {isa = PBXBuildFile; fileRef = D2850A011C1EA7D70084AB8F /* Showroom.svg */; };
+		D2A977421C3CA713001E47EF /* ScreenPictureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A977411C3CA713001E47EF /* ScreenPictureTableViewCell.m */; };
+		D2A977441C3CA724001E47EF /* ScreenPictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A977431C3CA724001E47EF /* ScreenPictureTableViewCell.xib */; };
 		D2C2EEA31C0D434D00E446B0 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C2EEA21C0D434D00E446B0 /* HttpRequest.m */; };
 		D2C2EEA61C0D43A900E446B0 /* ResponesResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C2EEA51C0D43A900E446B0 /* ResponesResult.m */; };
 		D2F906141C1AAD79009A3F30 /* qysdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808681BFAD664002772DB /* qysdk.framework */; };
@@ -105,6 +107,9 @@
 		D27CF8311C3B5D41007D5211 /* ScreenMenuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenMenuCollectionViewCell.h; sourceTree = "<group>"; };
 		D27CF8321C3B5D41007D5211 /* ScreenMenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenMenuCollectionViewCell.m; sourceTree = "<group>"; };
 		D2850A011C1EA7D70084AB8F /* Showroom.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Showroom.svg; sourceTree = "<group>"; };
+		D2A977401C3CA713001E47EF /* ScreenPictureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenPictureTableViewCell.h; sourceTree = "<group>"; };
+		D2A977411C3CA713001E47EF /* ScreenPictureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenPictureTableViewCell.m; sourceTree = "<group>"; };
+		D2A977431C3CA724001E47EF /* ScreenPictureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenPictureTableViewCell.xib; sourceTree = "<group>"; };
 		D2C2EEA11C0D434D00E446B0 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		D2C2EEA21C0D434D00E446B0 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		D2C2EEA41C0D43A900E446B0 /* ResponesResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponesResult.h; sourceTree = "<group>"; };
@@ -443,6 +448,9 @@
 				D27CF82F1C3B5D16007D5211 /* ScreenCollectionViewCell.m */,
 				D27CF8311C3B5D41007D5211 /* ScreenMenuCollectionViewCell.h */,
 				D27CF8321C3B5D41007D5211 /* ScreenMenuCollectionViewCell.m */,
+				D2A977401C3CA713001E47EF /* ScreenPictureTableViewCell.h */,
+				D2A977411C3CA713001E47EF /* ScreenPictureTableViewCell.m */,
+				D2A977431C3CA724001E47EF /* ScreenPictureTableViewCell.xib */,
 			);
 			name = screen;
 			sourceTree = "<group>";
@@ -712,6 +720,7 @@
 				D248E70C1AE93CDF005E9E53 /* Main.storyboard in Resources */,
 				D248E7111AE93CDF005E9E53 /* LaunchScreen.xib in Resources */,
 				D248E70E1AE93CDF005E9E53 /* Images.xcassets in Resources */,
+				D2A977441C3CA724001E47EF /* ScreenPictureTableViewCell.xib in Resources */,
 				D26E1ACB1C0E749E008E09D2 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,6 +741,7 @@
 			files = (
 				D27CF8331C3B5D41007D5211 /* ScreenMenuCollectionViewCell.m in Sources */,
 				D248E7281AE944C2005E9E53 /* MenuButtion.m in Sources */,
+				D2A977421C3CA713001E47EF /* ScreenPictureTableViewCell.m in Sources */,
 				D2C2EEA61C0D43A900E446B0 /* ResponesResult.m in Sources */,
 				D27CF8301C3B5D16007D5211 /* ScreenCollectionViewCell.m in Sources */,
 				D26E1ACC1C0E749E008E09D2 /* SVProgressHUD.m in Sources */,

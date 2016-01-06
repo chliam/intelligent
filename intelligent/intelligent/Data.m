@@ -13,15 +13,26 @@
 #define CameraServerAppidCacheKey @"CameraServerAppidCacheKey"
 #define CameraServerAuthCacheKey @"CameraServerAuthCacheKey"
 
-//@property(strong,nonatomic)NSString *cameraServerURL;
-//@property(strong,nonatomic)NSString *cameraServerAppid;
-//@property(strong,nonatomic)NSString *cameraServerAuth;
+#define SCREENServerURLCacheKey @"SCREENServerURLCacheKey"
+#define SCREENServerPORTCacheKey @"SCREENServerPORTCacheKey"
+#define SCREENIPUTCacheKey @"SCREENIPUTCacheKey"
+#define SCREENPLANCacheKey @"SCREENPLANCacheKey"
+#define SCREENROWNUMCacheKey @"SCREENROWNUMCacheKey"
+#define SCREENCOLNUMCacheKey @"SCREENCOLNUMCacheKey"
+
 @implementation Data
 {
     NSString *_lightControlServerURL;
     NSString *_cameraServerURL;
     NSString *_cameraServerAppid;
     NSString *_cameraServerAuth;
+    
+    NSString *_screenServerURL;
+    NSString *_screenServerPort;
+    NSString *_screenInput;
+    NSString *_screenPlan;
+    int _screenRowNum;
+    int _screenColNum;
 }
 
 static Data * dataManager=nil;
@@ -65,6 +76,48 @@ static Data * dataManager=nil;
             _cameraServerAuth=[NSString stringWithFormat:@"%@",mCameraServerAuth];
         }else{
             _cameraServerAuth=@"czFYScb5pAu+Ze7rXhGh/1IBvfvPWHBZfhr/Gnq1U2/fF5Y3QVq111IBvfvPWHBZfhr/Gnq1U28f8vVVUCUM60yqjrrwJvdss3WNn7/G5ik=";
+        }
+        
+        id mScreenServerURL=[mUserDefaults objectForKey:SCREENServerURLCacheKey];
+        if (mScreenServerURL) {
+            _screenServerURL=[NSString stringWithFormat:@"%@",mScreenServerURL];
+        }else{
+            _screenServerURL=@"172.16.3.4";
+        }
+        
+        id mScreenServerPort=[mUserDefaults objectForKey:SCREENServerPORTCacheKey];
+        if (mScreenServerPort) {
+            _screenServerPort=[NSString stringWithFormat:@"%@",mScreenServerPort];
+        }else{
+            _screenServerPort=@"15000";
+        }
+        
+        id mScreenInput=[mUserDefaults objectForKey:SCREENIPUTCacheKey];
+        if (mScreenInput) {
+            _screenInput=[NSString stringWithFormat:@"%@",mScreenInput];
+        }else{
+            _screenInput=[ARRAY_SOURCE_INPUT objectAtIndex:0];
+        }
+        
+        id mScreenPlan=[mUserDefaults objectForKey:SCREENPLANCacheKey];
+        if (mScreenPlan) {
+            _screenPlan=[NSString stringWithFormat:@"%@",mScreenPlan];
+        }else{
+            _screenPlan=[ARRAY_PLAN objectAtIndex:0];
+        }
+        
+        id mScreenRowNum=[mUserDefaults objectForKey:SCREENROWNUMCacheKey];
+        if (mScreenRowNum) {
+            _screenRowNum=[mScreenRowNum intValue];
+        }else{
+            _screenRowNum=4;
+        }
+        
+        id mScreenColNum=[mUserDefaults objectForKey:SCREENCOLNUMCacheKey];
+        if (mScreenColNum) {
+            _screenColNum=[mScreenColNum intValue];
+        }else{
+            _screenColNum=4;
         }
     }
     return self;
@@ -115,6 +168,79 @@ static Data * dataManager=nil;
     
     NSUserDefaults *mUserDefaults = [NSUserDefaults standardUserDefaults];
     [mUserDefaults setValue:_cameraServerAuth forKey:CameraServerAuthCacheKey];
+    [mUserDefaults synchronize];
+}
+
+
+-(NSString*)screenServerURL{
+    return _screenServerURL;
+}
+
+-(void)setScreenServerURL:(NSString *)screenServerURL{
+    _screenServerURL = screenServerURL;
+    
+    NSUserDefaults *mUserDefaults = [NSUserDefaults standardUserDefaults];
+    [mUserDefaults setValue:_screenServerURL forKey:SCREENServerURLCacheKey];
+    [mUserDefaults synchronize];
+}
+
+-(NSString*)screenServerPort{
+    return _screenServerPort;
+}
+
+-(void)setScreenServerPort:(NSString *)screenServerPort{
+    _screenServerPort = screenServerPort;
+    
+    NSUserDefaults *mUserDefaults = [NSUserDefaults standardUserDefaults];
+    [mUserDefaults setValue:_screenServerPort forKey:SCREENServerPORTCacheKey];
+    [mUserDefaults synchronize];
+}
+
+-(NSString*)screenInput{
+    return _screenInput;
+}
+
+-(void)setScreenInput:(NSString *)screenInput{
+    _screenInput = screenInput;
+    
+    NSUserDefaults *mUserDefaults = [NSUserDefaults standardUserDefaults];
+    [mUserDefaults setValue:_screenInput forKey:SCREENIPUTCacheKey];
+    [mUserDefaults synchronize];
+}
+
+-(NSString*)screenPlan{
+    return _screenPlan;
+}
+
+-(void)setScreenPlan:(NSString *)screenPlan{
+    _screenPlan = screenPlan;
+    
+    NSUserDefaults *mUserDefaults = [NSUserDefaults standardUserDefaults];
+    [mUserDefaults setValue:_screenPlan forKey:SCREENPLANCacheKey];
+    [mUserDefaults synchronize];
+}
+
+-(int)screenRowNum{
+    return _screenRowNum;
+}
+
+-(void)setScreenRowNum:(int)screenRowNum{
+    _screenRowNum = screenRowNum;
+    
+    NSUserDefaults *mUserDefaults = [NSUserDefaults standardUserDefaults];
+    [mUserDefaults  setValue:[NSString stringWithFormat:@"%d",_screenRowNum] forKey:SCREENROWNUMCacheKey];
+    [mUserDefaults synchronize];
+}
+
+-(int)screenColNum{
+    return _screenColNum;
+}
+
+-(void)setScreenColNum:(int)screenColNum{
+    _screenColNum = screenColNum;
+    
+    NSUserDefaults *mUserDefaults = [NSUserDefaults standardUserDefaults];
+    [mUserDefaults setValue:[NSString stringWithFormat:@"%d",_screenColNum] forKey:SCREENCOLNUMCacheKey];
     [mUserDefaults synchronize];
 }
 
