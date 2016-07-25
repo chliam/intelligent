@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22A5D301D45E4BD005B21B4 /* qysdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A5D2F1D45E4BD005B21B4 /* qysdk.framework */; };
 		D248E7001AE93CDF005E9E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D248E6FF1AE93CDF005E9E53 /* main.m */; };
 		D248E7031AE93CDF005E9E53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D248E7021AE93CDF005E9E53 /* AppDelegate.m */; };
 		D248E7061AE93CDF005E9E53 /* intelligent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D248E7041AE93CDF005E9E53 /* intelligent.xcdatamodeld */; };
@@ -38,7 +39,6 @@
 		D2A977441C3CA724001E47EF /* ScreenPictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A977431C3CA724001E47EF /* ScreenPictureTableViewCell.xib */; };
 		D2C2EEA31C0D434D00E446B0 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C2EEA21C0D434D00E446B0 /* HttpRequest.m */; };
 		D2C2EEA61C0D43A900E446B0 /* ResponesResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C2EEA51C0D43A900E446B0 /* ResponesResult.m */; };
-		D2F906141C1AAD79009A3F30 /* qysdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27808681BFAD664002772DB /* qysdk.framework */; };
 		D2F9F4781C06985800E80268 /* libSVGKit-iOS.1.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9F3F71C06985800E80268 /* libSVGKit-iOS.1.2.0.a */; };
 		D2F9F47B1C0698B900E80268 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9F47A1C0698B900E80268 /* CoreText.framework */; };
 		D2F9F47D1C0698C300E80268 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9F47C1C0698C300E80268 /* CoreImage.framework */; };
@@ -60,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D22A5D2F1D45E4BD005B21B4 /* qysdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = qysdk.framework; path = library/qysdk.framework; sourceTree = "<group>"; };
 		D248E6FA1AE93CDF005E9E53 /* intelligent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intelligent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D248E6FE1AE93CDF005E9E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D248E6FF1AE93CDF005E9E53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,7 +87,6 @@
 		D26E1ACD1C0ED3C8008E09D2 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		D26E1ACE1C0EDA12008E09D2 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		D26E1ACF1C0EDA12008E09D2 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
-		D27808681BFAD664002772DB /* qysdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = qysdk.framework; sourceTree = "<group>"; };
 		D278086B1BFAD94C002772DB /* VideoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMainViewController.h; sourceTree = "<group>"; };
 		D278086C1BFAD94C002772DB /* VideoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMainViewController.m; sourceTree = "<group>"; };
 		D278086E1BFB039E002772DB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -255,7 +255,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F906141C1AAD79009A3F30 /* qysdk.framework in Frameworks */,
+				D27808751BFB03DB002772DB /* libz.tbd in Frameworks */,
+				D27808771BFB03F1002772DB /* libiconv.tbd in Frameworks */,
+				D22A5D301D45E4BD005B21B4 /* qysdk.framework in Frameworks */,
 				D2F9F4851C06991800E80268 /* UIKit.framework in Frameworks */,
 				D2F9F4831C06990C00E80268 /* CoreGraphics.framework in Frameworks */,
 				D2F9F4811C0698FB00E80268 /* QuartzCore.framework in Frameworks */,
@@ -263,8 +265,6 @@
 				D2F9F47D1C0698C300E80268 /* CoreImage.framework in Frameworks */,
 				D2F9F47B1C0698B900E80268 /* CoreText.framework in Frameworks */,
 				D2F9F4781C06985800E80268 /* libSVGKit-iOS.1.2.0.a in Frameworks */,
-				D27808771BFB03F1002772DB /* libiconv.tbd in Frameworks */,
-				D27808751BFB03DB002772DB /* libz.tbd in Frameworks */,
 				D27808731BFB03CA002772DB /* OpenAL.framework in Frameworks */,
 				D27808711BFB03BA002772DB /* AudioToolbox.framework in Frameworks */,
 				D278086F1BFB039E002772DB /* AVFoundation.framework in Frameworks */,
@@ -281,6 +281,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80B9047B8C4AC3120BD68E2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D248E6F11AE93CDF005E9E53 = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +296,7 @@
 				D248E6FC1AE93CDF005E9E53 /* intelligent */,
 				D248E7191AE93CDF005E9E53 /* intelligentTests */,
 				D248E6FB1AE93CDF005E9E53 /* Products */,
+				80B9047B8C4AC3120BD68E2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -304,9 +312,8 @@
 		D248E6FC1AE93CDF005E9E53 /* intelligent */ = {
 			isa = PBXGroup;
 			children = (
-				D27CF82A1C3B55B7007D5211 /* screen */,
-				D2850A011C1EA7D70084AB8F /* Showroom.svg */,
 				D26E1ABF1C0E749E008E09D2 /* Control */,
+				D27CF82A1C3B55B7007D5211 /* screen */,
 				D2C2EEA01C0D431100E446B0 /* common */,
 				D2F9F4881C069B9200E80268 /* light */,
 				D278087D1BFB0532002772DB /* model */,
@@ -330,6 +337,7 @@
 		D248E6FD1AE93CDF005E9E53 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2850A011C1EA7D70084AB8F /* Showroom.svg */,
 				D248E6FE1AE93CDF005E9E53 /* Info.plist */,
 				D248E6FF1AE93CDF005E9E53 /* main.m */,
 			);
@@ -387,7 +395,6 @@
 			isa = PBXGroup;
 			children = (
 				D2F9F4791C06987D00E80268 /* SVGKit */,
-				D27808681BFAD664002772DB /* qysdk.framework */,
 			);
 			path = library;
 			sourceTree = "<group>";
@@ -406,6 +413,7 @@
 		D27808781BFB049A002772DB /* framework */ = {
 			isa = PBXGroup;
 			children = (
+				D22A5D2F1D45E4BD005B21B4 /* qysdk.framework */,
 				D2F9F4841C06991800E80268 /* UIKit.framework */,
 				D2F9F4821C06990C00E80268 /* CoreGraphics.framework */,
 				D2F9F4801C0698FB00E80268 /* QuartzCore.framework */,
@@ -836,7 +844,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -874,7 +882,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -888,24 +896,28 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/library",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = intelligent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/library",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ishitong.intelligent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -915,24 +927,28 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/library",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = intelligent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/library",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ishitong.intelligent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};

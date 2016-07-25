@@ -37,6 +37,8 @@
 
 @interface QYView:NSObject
 
+
+-(id)initWithType:(int) type;
 // 图像宽
 -(int) GetWidth;
 

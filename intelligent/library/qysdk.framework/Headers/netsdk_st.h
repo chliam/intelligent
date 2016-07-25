@@ -26,12 +26,22 @@ typedef struct{
     long captime;
     FILE *precordfile;//正在录像保存的文件指针
 }st_record_info;
+//传感器报警content字段解析
+typedef struct{
+    char enable; //布防撤防
+    int sensetype;//传感器类型
+    int sensenum;//传感器序号
+    int temperature;//当传感器类型为4有此字段，温度实际值=该字段/100
+    int humidity;//当传感器类型为5有此字段，湿度实际值=该字段/100
+    int power;//当传感器类型为8有此字段，1：主机停电 2：主机来电 3：主机欠压
+}st_sensor_alarm_content;
 typedef struct{
     char        id[64];
     uint64_t    deviceNo; // 设备ID
     uint64_t    channelNo; // 通道id
     int         type; // 报警类型
     char 		content[256]; // 报警内容
+    st_sensor_alarm_content sensorcontent;//传感器报警内容解析
     char		time[64]; // 报警时间
     char		shotUrl[256]; // 截图网址
     char		videoUrl[256]; //视频网址
@@ -303,6 +313,33 @@ typedef struct{
     int IPCNum;
     st_ipc_info *ipcls;
 }st_ipc_list;
+
+//传感器触发信息
+typedef struct{
+    int sensortype;//传感器类型
+    int sensorNum;//传感器系列号
+    char startTime[64];//触发时间
+}st_sensortrigger_info;
+
+//传感器状态
+typedef struct{
+    int num;//格式
+   int *sensortriggerstatuls;//0：未触发 1：已触发
+}st_sensorlist;
+typedef struct{
+    int enable;//使能
+    int power;
+    st_sensorlist ywk;//烟感
+    st_sensorlist pir;//红外
+    st_sensorlist mck;//门磁
+    st_sensorlist tear;//催泪弹
+    st_sensorlist shake;//震动
+}st_sensortrigger_statu;
+//单个传感器状态
+typedef struct{
+    int enable;//使能
+    int state;//触发状态
+}st_onesensortrigger_statu;
 
 //升级包信息
 typedef struct{

@@ -255,9 +255,9 @@
                 device.device_id=deviceinfo.deviceID;
                 device.status=deviceinfo.status;
                 [[MindNet sharedManager]getChanelwithDevid:device
-                                               withsuccess:^(NSArray *ret) {
+                                               withsuccess:^(NSArray *retChanel) {
                                                    QY_CHANNEL_INFO chanel;
-                                                   for(NSValue* valueObj in ret)
+                                                   for(NSValue* valueObj in retChanel)
                                                    {
                                                        [valueObj getValue:&chanel];
                                                        
@@ -305,7 +305,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    currenDevice=deviceArray[indexPath.section];
+    currenDevice=deviceArray[indexPath.row];
     [self connectDevice];
 }
 
@@ -360,6 +360,10 @@
 -(void)connectDevice{
     if(currenDevice && currenDevice.status)
     {
+        if(video){
+            [video Release];
+            video = nil;
+        }
         [Dialog showProgress:self withLabel:@"正在连接.."];
         [[MindNet sharedManager] createVideoView:currenDevice.device_id callback:^(int32_t ret, QYView *view) {
             [Dialog hideProgress];

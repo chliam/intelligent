@@ -13,15 +13,12 @@
 #import "ScreenPictureTableViewCell.h"
 #import "Data.h"
 #import "Dialog.h"
+//#import <GCDAsyncSocket.h>
 
 #define ARRAY_SCREEN_MENU @[@"开机",@"关机",@"单屏",@"拼接",@"输入",@"图像",@"预案",@"界面"]
 
 @implementation ScreenViewController
 {
-//    NSString *mCurrentInput;
-//    NSString *mCurrentPlan;
-//    int mScreenColNum;
-//    int mScreenRowNum;
     int mSelectColStart;
     int mSelectColEnd;
     int mSelectRowStart;
@@ -143,8 +140,31 @@
     }];
 }
 
+//- (void)socket:(GCDAsyncSocket *)sender didConnectToHost:(NSString *)host port:(UInt16)port
+//{
+//    NSLog(@"Cool, I'm connected! That was easy.");
+//}
+//- (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag
+//{
+//    if (tag == 1)
+//        NSLog(@"First request sent");
+//    else if (tag == 2)
+//        NSLog(@"Second request sent");
+//}
+
 - (IBAction)btnMenuClick:(UIButton*)sender {
-    if (sender.tag == 4) {
+    if (sender.tag == 0) {
+//        GCDAsyncSocket *socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+//        NSError *err = nil;
+//        if (![socket connectToHost:[Data instance].screenServerURL onPort:[Data instance].screenServerPort.intValue error:&err]) // Asynchronous!
+//        {
+//            NSLog(@"I goofed: %@", err);
+//        }
+//        Byte byte[] = {0x1B,0x43,0xDD,0x0D,0x0A,0x01,0x00,0x80};
+//        NSData *data = [[NSData alloc] initWithBytes:byte length:8];
+//        [socket writeData:data withTimeout:-1 tag:1];
+    }
+    else if (sender.tag == 4) {
         UIPickerView *picker = [[UIPickerView alloc] initWithFrame:CGRectMake(0,  20, 304, 216)];
         picker.delegate = self;
         picker.tag = sender.tag;

@@ -109,6 +109,11 @@
                callBack:(void (^)(int32_t ret)) callback;
 
 
+// 设置翻转
+-(void) SetVideoOrientation:(uint64_t) channelID
+                       Mode:(int) mode
+                   callBack:(void (^)(int32_t ret)) callback;
+
 
 // 创建视频观看类
 - (QYView *) CreateView: (uint64_t)channelID;

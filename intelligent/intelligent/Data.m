@@ -75,7 +75,8 @@ static Data * dataManager=nil;
         if (mCameraServerAuth) {
             _cameraServerAuth=[NSString stringWithFormat:@"%@",mCameraServerAuth];
         }else{
-            _cameraServerAuth=@"czFYScb5pAu+Ze7rXhGh/1IBvfvPWHBZfhr/Gnq1U2/fF5Y3QVq111IBvfvPWHBZfhr/Gnq1U28f8vVVUCUM60yqjrrwJvdss3WNn7/G5ik=";
+            //_cameraServerAuth=@"czFYScb5pAu+Ze7rXhGh/1IBvfvPWHBZfhr/Gnq1U2/fF5Y3QVq111IBvfvPWHBZfhr/Gnq1U28f8vVVUCUM60yqjrrwJvdss3WNn7/G5ik=";
+            _cameraServerAuth=@"czFYScb5pAu+Ze7rXhGh/3aGGrcbzIRh6mU9JCMJ/F/4iO+8GxCVYwxh9WYWL/iRRweoOAiaI9vmlrBaCMrtn9FAt75ccbDU";
         }
         
         id mScreenServerURL=[mUserDefaults objectForKey:SCREENServerURLCacheKey];
